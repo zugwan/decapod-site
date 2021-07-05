@@ -6,7 +6,7 @@ metadata:
 global:
   nodeSelector:
     taco-lma: enabled
-  clusterName: cluster.local
+  clusterName: cluster.taco
   storageClassName: taco-storage
   repository: https://openinfradev.github.io/hanu-helm-repo/
   serviceScrapeInterval: 30s
