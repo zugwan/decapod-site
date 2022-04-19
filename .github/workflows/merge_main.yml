@@ -38,4 +38,4 @@ jobs:
           destination-repository-name: 'decapod-manifests'
           user-email: 'taco_support@sk.com'
           commit-message: See ORIGIN_COMMIT
-          target-branch: ${{ github.base_ref }}
+          target-branch: release-v2
