@@ -25,8 +25,11 @@ jobs:
       - name: Run render-cd.sh
         run: |
           set -xe
-          chmod +x .github/workflows/render-cd.sh
-          .github/workflows/render-cd.sh
+          #chmod +x .github/workflows/render-cd.sh
+          #.github/workflows/render-cd.sh
+
+          echo "github.base_ref: " ${{ github.base_ref }}
+          echo "GITHUB_BASE_REF: " ${GITHUB_BASE_REF} ${{ GITHUB_BASE_REF }}
 
       - name: Pushes to the repository for argocd
         uses: cpina/github-action-push-to-another-repository@v1.3
